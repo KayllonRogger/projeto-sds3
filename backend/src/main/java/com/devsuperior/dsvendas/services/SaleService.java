@@ -21,8 +21,10 @@ public class SaleService {
 	@Autowired
 	private SaleRepository repository;
 	
+	@Autowired
 	private SellerRepository sellerRepository;
 	
+
 	@Transactional(readOnly = true)
 	public Page<SaleDTO> findAll(Pageable pageable){
 		sellerRepository.findAll();
