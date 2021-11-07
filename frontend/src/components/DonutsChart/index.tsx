@@ -23,7 +23,7 @@ function DonutsChart() {
 
                 setChartData({ labels: myLabels, series: mySeries })
             })
-    })
+    }, [])
 
 
 
